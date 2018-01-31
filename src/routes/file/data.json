@@ -1,0 +1,46 @@
+{
+    "name": null,
+    "author": {
+        "OR" : [],
+        "NOT" : []
+    },
+    "place": {
+        "OR" : [],
+        "NOT" : []
+    },
+    "idCollective" : {
+        "OR" : [],
+        "NOT" : []
+    },
+    "idComunarrProject": {
+        "OR" : [],
+        "NOT" : []
+    },
+    "idGeneralTopic" : {
+        "OR" : [1,3],
+        "NOT" : []
+    },
+    "idSpecificTopic" : {
+        "OR" : [5,6],
+        "NOT" : []
+    },
+    "idUser" : {
+        "OR" : [],
+        "NOT" : []
+    },
+    "idContentType" : {
+        "OR" : [],
+        "NOT" : []
+    },
+    "idFileType" : {
+        "OR" : [],
+        "NOT" : []
+    },
+    "relatedDate" : ["2000-01-01", "2000-01-02"],
+    "updateDate" : ["2000-01-01", "2000-01-02"],
+    "keyWords" : {
+        "AND" : [4],
+        "OR" : [1, 2],
+        "NOT" : [3]
+    }
+}
