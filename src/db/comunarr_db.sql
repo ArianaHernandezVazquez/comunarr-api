@@ -1578,12 +1578,12 @@ START TRANSACTION;
 			idSpecificTopic, idPrivacyType, idContentType, idFileType, updateDate, idUser, timestamp, size)
         VALUES (p_name, p_author, p_place, p_relatedDate, p_idCollective, p_idComunarrProject, p_idGeneralTopic, 
 			p_idSpecificTopic, p_idPrivacyType, p_idContentType, idFileType, CURDATE(), p_idUser, p_timestamp, p_size);
-        
+            
+		SET insertedId = LAST_INSERT_ID();
+
         # Insert key words
 		IF p_arrayKeyWords IS NOT NULL 
         THEN 
-            
-			SET insertedId = LAST_INSERT_ID();
             
             CALL keyWord_insert(insertedId, p_arraykeyWords);
 			
